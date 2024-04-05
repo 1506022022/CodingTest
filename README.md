@@ -2,6 +2,9 @@
 
 <details>
 <summary><b>문제 내용 보기</b></summary>
+
+##코드 짜면서 고민했던 내용##
+
  
 # [level 1] 공원 산책 - 172928 
 
