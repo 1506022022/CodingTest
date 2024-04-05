@@ -136,7 +136,7 @@
 </details>
 
 **[코드 짜면서 고민했던 내용]**
-- 이동 방향과 거리가 문자열 배열로 주어졌는데 이 데이터를 가독성 좋으면서도 최대한 짧게 작성하기 위해서 고민했습니다.
+- 이동 방향과 거리가 문자열 배열로 주어졌는데 이 데이터를 가독성이 좋으면서도 최대한 짧게 작성하기 위해서 고민했습니다.
 - 코딩 테스트에서는 그럴 리 없지만, 만약 나중에 기능이 수정된다면 이라는 가정을 하고 작성해 봤습니다. 그래서 기능을 제거하거나 추출하기 쉽도록 기능별로 번호를 매겼습니다. 또한 2-2번 파트는 일부러 bool 변수를 둬서 다른 파트와 연관되지 않도록 했습니다.
 
 **[코드]**
@@ -219,24 +219,24 @@ vector<int> solution(vector<string> park, vector<string> routes)
 		// 2-2. 장애물이 있다.
 		int dx = 0;
 		int dy = 0;
-        bool bObstruction = false;
+        	bool bObstruction = false;
 		for (int d = 1; d <= move.Distance; d++)
 		{
 			dy = move.DY * d;
 			dx = move.DX * d;
 			if (park[answer[0] + dy][answer[1] + dx] == 'X')
 			{
-                bObstruction=true;
+                		bObstruction=true;
 			}
 		}
-        if(bObstruction)
-        {
-            continue;
-        }
+	        if(bObstruction)
+	        {
+	            continue;
+	        }
         
-	// 2-3. 여기까지 왔다면 명령을 수행한다.
-	answer[0] += move.DY * move.Distance;
-	answer[1] += move.DX * move.Distance;
+		// 2-3. 여기까지 왔다면 명령을 수행한다.
+		answer[0] += move.DY * move.Distance;
+		answer[1] += move.DX * move.Distance;
 	}
 
 	// 3. 결과 출력.
