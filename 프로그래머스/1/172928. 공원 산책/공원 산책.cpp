@@ -91,9 +91,9 @@ vector<int> solution(vector<string> park, vector<string> routes)
             continue;
         }
         
-		// 2-3. 여기까지 왔다면 명령을 수행한다.
-		answer[0] += move.DY * move.Distance;
-		answer[1] += move.DX * move.Distance;
+	// 2-3. 여기까지 왔다면 명령을 수행한다.
+	answer[0] += move.DY * move.Distance;
+	answer[1] += move.DX * move.Distance;
 	}
 
 	// 3. 결과 출력.
