@@ -3,8 +3,6 @@
 <details>
 <summary><b>문제 내용 보기</b></summary>
 
-##코드 짜면서 고민했던 내용##
-
  
 # [level 1] 공원 산책 - 172928 
 
@@ -136,6 +134,8 @@
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://school.programmers.co.kr/learn/challenges
 </details>
+
+##코드 짜면서 고민했던 내용##
 
 
 ```C++
