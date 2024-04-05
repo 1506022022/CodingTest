@@ -28,14 +28,14 @@ const unordered_map<string, Move> Direction =
 
 vector<int> solution(vector<string> park, vector<string> routes)
 {
-	// 1. 입력
+	// 1. 입력.
 	vector<int> answer(2,0);
 
-	// 1-1. 공원 크기 구하기
+	// 1-1. 공원 크기 구하기.
 	int parkHeight = park.size();
 	int parkWidth = park[0].size();
 
-	// 1-2. 시작 지점 찾기
+	// 1-2. 시작 지점 찾기.
 	for (int y = 0; y < parkHeight; y++)
 	{
 		for (int x = 0; x < parkWidth; x++)
@@ -48,7 +48,7 @@ vector<int> solution(vector<string> park, vector<string> routes)
 		}
 	}
 
-	// 1-3. 명령 읽어들이기
+	// 1-3. 명령 읽어들이기.
 	vector<Move> moves;
 	for (string route : routes)
 	{
@@ -61,7 +61,7 @@ vector<int> solution(vector<string> park, vector<string> routes)
 		moves.push_back(move);
 	}
 
-	// 2. 명령 수행하기
+	// 2. 명령 수행하기.
 	for (auto move : moves)
 	{
 		// 2-1. 공원을 벗어난다.
