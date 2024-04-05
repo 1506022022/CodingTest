@@ -161,15 +161,17 @@ struct Move
 	}
 };
 
+const unordered_map<string, Move> Directions =
+{
+	{ "E", Move(1, 0,1)  },
+	{ "W", Move(-1, 0,1) },
+	{ "S", Move(0, 1,1)  },
+	{ "N", Move(0, -1,1) }
+};
+
 vector<int> solution(vector<string> park, vector<string> routes)
 {
-	const unordered_map<string, Move> Directions =
-	{
-		{ "E", Move(1, 0,1)  },
-		{ "W", Move(-1, 0,1) },
-		{ "S", Move(0, 1,1)  },
-		{ "N", Move(0, -1,1) }
-	};
+	// 1. 입력
 	vector<int> answer(2);
 
 	// 1-1. 공원 크기 구하기
