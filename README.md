@@ -105,7 +105,7 @@ vector<int> solution(vector<string> park, vector<string> routes)
 
 ```
 <details>
-<summary><b>문제 내용 보기</b>b</summary>
+<summary><b>문제 내용 보기</b></summary>
  
 # [level 1] 공원 산책 - 172928 
 
